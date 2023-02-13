@@ -10,9 +10,19 @@ violator_songs = [
     ['a9', 5.83]
 ]
 
-number_of_songs = int(input('Сколько песен выбрать?'))
-list = [input(f'Название {i+1}-й песни:') for i in range(number_of_songs)]
-print(list)
-# Название 1-й песни: Halo
-# Название 2-й песни: Enjoy the Silence
-# Название 3-й песни: Clean
+# ввод плейлиста
+def input_playlist():
+    number_of_songs = int(input('Сколько песен выбрать?'))
+    list = [input(f'Название {i+1}-й песни:') for i in range(number_of_songs)]
+    return list
+
+def time_playlist(pl):
+    for i in range(len(pl)):
+        print(pl[i])
+    # return pl
+
+play_list = input_playlist()
+time = time_playlist(play_list)
+
+# print(play_list)
+# print(time)

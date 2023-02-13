@@ -5,7 +5,7 @@ def input_playlist():
     return list
 
 # считаем время
-def time_playlist(pl):
+def time_playlist(p_list):
     count_time = 0
     violator_songs = [
     ['World in My Eyes', 4.86], 
@@ -19,9 +19,9 @@ def time_playlist(pl):
     ['Clean', 5.83]
 ]
 
-    for song_number in range(len(pl)):
+    for song_name in range(len(p_list)):
         for song_time in range(len(violator_songs)):
-            if pl[song_number] in violator_songs[song_time][0]:
+            if p_list[song_name] in violator_songs[song_time][0]:
                 count_time += float(violator_songs[song_time][1])
     return count_time
 

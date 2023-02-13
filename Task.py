@@ -7,8 +7,17 @@ def input_playlist():
 # считаем время
 def time_playlist(pl):
     count_time = 0
-    violator_songs = [['s1', 4.86], ['s2', 4.43], ['s3', 4.56], ['s4', 4.9], ['s5', 6.07],
-    ['s6', 4.20], ['s7', 4.76], ['s8', 4.29], ['s9', 5.83]]
+    violator_songs = [
+    ['World in My Eyes', 4.86], 
+    ['Sweetest Perfection', 4.43],
+    ['Prrsonal Jesus', 4.56],
+    ['Halo', 4.9],
+    ['Waiting for the Night', 6.07],
+    ['Enjoy the Silence', 4.20],
+    ['Policy of Truth', 4.76],
+    ['Blue Dress', 4.29],
+    ['Clean', 5.83]
+]
 
     for song_number in range(len(pl)):
         for song_time in range(len(violator_songs)):
